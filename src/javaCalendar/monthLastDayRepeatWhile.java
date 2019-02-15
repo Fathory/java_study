@@ -8,16 +8,16 @@ class monthLastDayRepeatWhile{
 		Scanner scan = new Scanner(System.in);
 		int month = 0;
 		while(month != -1){
-			System.out.println("¿ùÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+			System.out.println("ì›”ì„ ì…ë ¥í•˜ì„¸ìš”.");
 			month = scan.nextInt();
 			if(month == -1){
 				System.out.println("Have a nice day!");
 				break;
 			}
 			if(month < 1 || month>12){
-				System.out.println(month+"¿ùÀº Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
+				System.out.println(month+"ì›”ì€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 			}else{
-				System.out.println(month+"¿ùÀº "+months[month-1]+"ÀÏ±îÁö ÀÖ½À´Ï´Ù.");
+				System.out.println(month+"ì›”ì€ "+months[month-1]+"ì¼ê¹Œì§€ ìˆìŠµë‹ˆë‹¤.");
 			}
 		}
 		scan.close();

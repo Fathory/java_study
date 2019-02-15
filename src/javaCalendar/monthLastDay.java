@@ -9,9 +9,9 @@ class monthLastDay{
 		scan.close();
 		int[] months = {31,28,31,30,31,30,31,31,30,31,30,31};
 		if(month < 1 || month > 12){
-			System.out.println(month+"¿ùÀº Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println(month+"ì›”ì€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}else{
-			System.out.println(month+"¿ùÀº "+months[month-1]+"ÀÏ±îÁö ÀÖ½À´Ï´Ù.");
+			System.out.println(month+"ì›”ì€ "+months[month-1]+"ì¼ê¹Œì§€ ìˆìŠµë‹ˆë‹¤.");
 		}
 	}
 }

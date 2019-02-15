@@ -5,21 +5,21 @@ import java.util.Scanner;
 class monthLastDayRepeat{
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("¹İº¹ È½¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ë°˜ë³µ íšŸìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		int repeat = scan.nextInt();
 		int[] target = new int[repeat];
 		int[] months = {31,28,31,30,31,30,31,31,30,31,30,31};
-		System.out.println("¿ùÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì›”ì„ ì…ë ¥í•˜ì„¸ìš”.");
 		for(int i = 0; i<repeat; i++){
 			target[i] = scan.nextInt();
 			if(target[i] < 1 || target[i]>12){
-				System.out.println(target[i]+"¿ùÀº Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
+				System.out.println(target[i]+"ì›”ì€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 				i--;
 			}
 		}
 		scan.close();
 		for(int j = 0; j<repeat; j++){
-			System.out.println(target[j]+"¿ùÀº "+months[target[j]-1]+"ÀÏ±îÁö ÀÖ½À´Ï´Ù.");
+			System.out.println(target[j]+"ì›”ì€ "+months[target[j]-1]+"ì¼ê¹Œì§€ ìˆìŠµë‹ˆë‹¤.");
 		}
 	}
 	

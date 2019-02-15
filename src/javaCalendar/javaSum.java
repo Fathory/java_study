@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class javaSum{
 	public static void main(String[] args) {
-		System.out.println("µÎ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ë‘ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		Scanner scan = new Scanner(System.in);
 		String s = scan.nextLine();
 		scan.close();
@@ -13,6 +13,6 @@ class javaSum{
 		for(int i = 0; i<a.length; i++){
 			sum += Integer.parseInt(a[i]);
 		}
-		System.out.println("µÎ ¼öÀÇ ÇÕÀº "+sum+"ÀÔ´Ï´Ù.");
+		System.out.println("ë‘ ìˆ˜ì˜ í•©ì€ "+sum+"ì…ë‹ˆë‹¤.");
 	}
 }

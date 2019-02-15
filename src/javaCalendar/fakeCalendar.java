@@ -9,10 +9,10 @@ class fakeCalendar{
 		int month = 0;
 		int year = 0;
 		while (month != -1 || year == -1) {
-			System.out.println("¿¬µµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+			System.out.println("ì—°ë„ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 			System.out.print("cal>>");
 			year= scan.nextInt();
-			System.out.println("¿ùÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+			System.out.println("ì›”ì„ ì…ë ¥í•˜ì„¸ìš”.");
 			month = scan.nextInt();
 			getLeafDays(year);
 			if(month == -1 ){
@@ -20,7 +20,7 @@ class fakeCalendar{
 				break;
 			}
 			if(month < 1 || month>12){
-				System.out.println(month+"¿ùÀº Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
+				System.out.println(month+"ì›”ì€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 			}else{
 				print(year, month);
 			}
@@ -28,8 +28,8 @@ class fakeCalendar{
 		scan.close();
 	}
 	static void print(int year, int month){
-		System.out.printf("     <<%4d³â %d¿ù>>\n", year, month);
-		System.out.println("    ÀÏ      ¿ù      È­     ¼ö     ¸ñ     ±İ    Åä");
+		System.out.printf("     <<%4dë…„ %dì›”>>\n", year, month);
+		System.out.println("    ì¼      ì›”      í™”     ìˆ˜     ëª©     ê¸ˆ    í† ");
 		System.out.println("---------------------");
 		for (int i = 1; i <= MAX_DAYS[month-1]; i++) {
 			System.out.printf("%3d",i);
