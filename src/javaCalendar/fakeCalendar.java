@@ -8,7 +8,7 @@ class fakeCalendar{
 		Scanner scan = new Scanner(System.in);
 		int month = 0;
 		int year = 0;
-		while (month != -1) {
+		while (month != -1 || year == -1) {
 			System.out.println("연도를 입력하세요.");
 			System.out.print("cal>>");
 			year= scan.nextInt();
