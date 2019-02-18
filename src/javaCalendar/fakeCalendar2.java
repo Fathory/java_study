@@ -36,40 +36,38 @@ class fakeCalendar2{
 	}
 	static void print(int year, int month, String date){
 		int add = 0;
-		if(date == "월"){
+		if(date.equals("월")){
 			add = 1;
-		}else if(date == "화"){
+		}else if(date.equals("화")){
 			add = 2;
-		}else if(date == "수"){
+		}else if(date.equals("수")){
 			add = 3;			
-		}else if(date == "목"){
+		}else if(date.equals("목")){
 			add = 4;
-		}else if(date == "금"){
+		}else if(date.equals("금")){
 			add = 5;
-		}else if(date == "토"){
+		}else if(date.equals("토")){
 			add = 6;
 		}
-		System.out.println(add);
 		System.out.printf("     <<%4d년 %3d월>>\n", year, month);
-		System.out.println("    일      월      화     수     목     금    토");
+		System.out.println(" SU  MO  TU  WE  TH  FR  SA");
 		System.out.println("---------------------");
+		int count=0;
 		for (int i = 1; i <= 7; i++) {
 			if(add>0){
-				System.out.printf("%3d"," ");
+				System.out.printf("%3s"," ");
 				add--;
 			}else{
-				System.out.printf("%3d",i);
+				System.out.printf("%3d",++count);
 			}
 		}
+		int tmp = count++;
 		System.out.println();
-		int count=0;
-		for (int i = 7-add; i <= MAX_DAYS[month-1]; i++) {
-			System.out.printf("%3d",i);
-			if(count == 7 || i == MAX_DAYS[month-1]){
+		for (int i = count; i <= MAX_DAYS[month-1]; i++) {
+			System.out.printf("%3d",count++);
+			if((i-tmp) % 7 == 0 || i == MAX_DAYS[month-1]){
 				System.out.println();
-				count = 0;
 			}
-			count++;
 		}
 	}
 	public static void getLeafDays(int year){
