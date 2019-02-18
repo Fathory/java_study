@@ -1,3 +1,5 @@
+// 달력 그냥 출력
+
 package javaCalendar;
 
 import java.util.Scanner;

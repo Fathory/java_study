@@ -1,3 +1,5 @@
+// 요일 입력받아 달력 보이기
+
 package javaCalendar;
 
 import java.util.Scanner;
@@ -50,7 +52,7 @@ class fakeCalendar2{
 			add = 6;
 		}
 		System.out.printf("     <<%4d년 %3d월>>\n", year, month);
-		System.out.println(" SU  MO  TU  WE  TH  FR  SA");
+		System.out.println(" SU MO TU WE TH FR SA");
 		System.out.println("---------------------");
 		int count=0;
 		for (int i = 1; i <= 7; i++) {
